@@ -5,16 +5,16 @@ layui.config({
 	index: 'lib/index' //主入口模块
 }).use(['index', 'form', 'table'], function() {
 	$ = layui.jquery
-	
-// 项目管理
-// 发掘
-  PostIndexData({
-    TblNum: 9999,
 
-  }, function (returnData) {
-    console.log(returnData)
+	// 项目管理
+	// 发掘
+	PostIndexData({
+		TblNum: 9999,
 
-  })
+	}, function(returnData) {
+		console.log(returnData)
+
+	})
 
 
 
@@ -250,41 +250,35 @@ myChart.setOption(option);
 // 4.1人力职称统计
 var myChart = echarts.init(document.getElementById('rlzc'));
 option = {
-    color: ['#3398DB'],
-    tooltip : {
-        trigger: 'axis',
-        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-        }
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis : [
-        {
-            type : 'category',
-            data : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-            axisTick: {
-                alignWithLabel: true
-            }
-        }
-    ],
-    yAxis : [
-        {
-            type : 'value'
-        }
-    ],
-    series : [
-        {
-            name:'直接访问',
-            type:'bar',
-            barWidth: '60%',
-            data:[10, 52, 200, 334, 390, 330, 220]
-        }
-    ]
+	color: ['#3398DB'],
+	tooltip: {
+		trigger: 'axis',
+		axisPointer: { // 坐标轴指示器，坐标轴触发有效
+			type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+		}
+	},
+	grid: {
+		left: '3%',
+		right: '4%',
+		bottom: '3%',
+		containLabel: true
+	},
+	xAxis: [{
+		type: 'category',
+		data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+		axisTick: {
+			alignWithLabel: true
+		}
+	}],
+	yAxis: [{
+		type: 'value'
+	}],
+	series: [{
+		name: '直接访问',
+		type: 'bar',
+		barWidth: '60%',
+		data: [10, 52, 200, 334, 390, 330, 220]
+	}]
 };
 
 myChart.setOption(option);
