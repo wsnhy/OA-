@@ -1,0 +1,32 @@
+body{
+	background-color: #eeeeee;
+	padding:10px 5px;
+	
+}
+*{
+	box-sizing:border-box;
+}
+
+.listbox{
+/* 	background: white; */
+}
+.box{
+	
+	height: 400px;
+	background: white;
+}
+/* 标题 */
+.title{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	background: white;
+	border-bottom: 1px solid #EEEEEE;
+	
+	}
+	.title_text{
+		color: black;
+		font-size: 15px;
+		
+	}
