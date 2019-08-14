@@ -1,0 +1,380 @@
+.layui-fluid{
+	padding:10px;
+}
+.margin-Bottom{
+	margin-bottom:30px;
+}
+body{
+	background-color: #eeeeee
+}
+*{
+	box-sizing:border-box;
+}
+.border{
+	border:1px solid #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+/* 头部数据 */
+.top_data{
+    height: 115px;
+
+}
+/* .aa{
+       background-color:#65C0ED;
+
+}
+.bb{
+    background-color:wheat
+
+}
+.cc{
+    background-color:aquamarine;
+
+
+}
+.dd{
+    background-color:coral;
+
+} */
+.data_box{
+    /* background-color:wheat; */
+    border: 1px solid #666666;
+    box-sizing: border-box;
+    background: white;
+  
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    cursor: pointer;
+    height: 95px;
+  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+  }
+  .top_data {
+     width: 100%; 
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+  }
+  .topbox{
+      padding: 1.5px;
+      width: 24%
+  }
+  .xma_span{
+    font-size: 25px !important;
+    color: black;
+
+  }
+  .data_box span{
+    font-size: 16px;
+    color: black;
+  
+  }
+
+  .data_xm{
+      display: flex;
+      align-items: center;
+      
+  }
+  .xma{
+      font-size: 25px;
+      color: black;
+  }
+  .data_xm_bottom{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+  }
+  .small_data{
+      /* margin-right: 10px; */
+  }
+
+  /* <!-- 第二部分数据中心和项目统计 --> */
+  .second_boxa{
+    border: 1px solid #ddd;
+    background-color: #578ebe;
+    height: 336px;
+    
+  }
+
+  .t_title{
+    width: 100%;
+	height: 38px;
+	line-height: 30px;
+	background-color: #fff;
+	border-bottom:1px solid #e6e6e6;
+}
+.box_l21_title{
+    /*	width:100%;*/
+        height: 38px;
+        line-height: 30px;
+        padding:5px;
+        overflow:hidden;
+    }
+    .box_l21_t{
+        width:49%;
+        float:left;
+        cursor:pointer;
+    }
+    
+    .box_l21_t2{
+        text-align:right;
+        color:#666;
+        line-height: 30px;
+        font-size:14px;
+        border:none;
+        background-color:transparent;
+    /*	padding-right:50px;*/
+    }
+    .box_l21_t2:hover{
+        color:#65C0ED;
+    }
+
+    .t_content{
+        background-color: #fff;
+    }
+    .box_l21_body{
+  
+    
+        padding:0 15px 10px;
+  
+        list-style:square inside;
+ 
+    }
+    .box_2li{
+        border-bottom:1px solid #efefef;
+        font-size:12px;
+        padding-left:0;
+        line-height:35px;
+        list-style: square inside;
+        cursor:pointer;
+        color:#666;
+        position:relative;
+        font-family: 'sim Song';
+    }
+    .box_2li:first-child{
+        padding-top:0;
+        
+    }
+    .box_2li:last-child{
+        border-bottom:none;
+        
+    }
+    .li_content1:hover{
+        color:#65C0ED;
+    }
+    .li_content1{
+        position:absolute;
+        top:0px;
+        left:25px;
+        right:135px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .li_content2{
+        position:absolute;
+        top:0px;
+        right:0;
+        width:130px;
+    }
+  /* <!-- 第三部项目统计资金 --> */
+  .third_boxa{
+    border: 1px solid #ddd;
+    /* background-color: #578ebe; */
+    background: white;
+    height: 260px;
+  }
+  .xmzj{
+      height: 222px;
+  }
+.eachs{
+   background-color: white;
+}
+  /* 右侧第一部分 */
+
+.right_boxa{
+    height: 361.5px;
+    background-color: #578ebe;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: white;
+    
+}
+.right_boxb{
+    height: 362px;
+    background:white;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.right_boxt{
+    height: 352px;
+    background:white;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* 
+
+
+
+
+
+/*快捷*/
+.kjicon{
+	background-position:10px -189px;
+}
+.boxul{
+	list-style:none;
+/*	overflow:hidden;*/
+	height:auto;
+/*	margin-bottom:30px;*/
+	padding-bottom: 10px;
+}
+.boxul li:first-child{
+/*	margin-left:2%;*/
+}
+.boxul li{
+	list-style:none;
+	width:22.5%;
+	height:85px;
+/*	margin:auto auto auto auto; */
+	margin-right:2%;
+	float:left;
+	position:relative;
+	margin-top:10px;
+	
+}
+.msgCount{
+	display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -11px;
+    right: 19px;
+    color: #fff;
+    background-color: #f00;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 4px;
+}
+
+.box-icon{
+	background:url('../../images/gr/icon_0.png') no-repeat;
+	margin:0px auto;
+	height:48px;
+	width:48px;
+	cursor:pointer;
+}
+.box-title{
+ /* width: 100%; */
+    text-align: center;
+    /* padding-left: 18%; */
+    height: 30px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    margin-top: 13px;
+}
+
+.icon-a{
+	background-position:-124px -311px;
+}
+.icon-b{
+	background-position:-211px -311px;
+/*	background-position:-211px -21px;*/
+}
+.icon-c{
+	background-position:-299px -311px;
+}
+.icon-d{
+	background-position:-386px -311px;
+}
+
+.icon-e{
+	background-position:-124px -397px;
+}
+.icon-f{
+	background-position:-212px -397px;
+}
+.icon-g{
+	background-position:-299px -397px;
+}
+.icon-h{
+	background-position:-387px -397px;
+}
+
+.icon-i{
+	background-position:-124px -494px;
+}
+.icon-j{
+	background-position:-211px -494px;
+}
+.icon-k{
+	background-position:-299px -494px;
+}
+.icon-l{
+	background-position:-479px -311px;
+}
+.icon-m{
+	background-position:-479px -397px;
+}
+.icon-cg{
+	background-position:-386px -494px;
+}
+/*hover*/
+.icon-b:hover{
+	background-position:-211px -25px;
+}
+.icon-c:hover{
+	background-position:-299px -25px;
+}
+.icon-d:hover{
+	background-position:-386px -25px;
+}
+
+.icon-e:hover{
+	background-position:-124px -117px;
+}
+.icon-f:hover{
+	background-position:-212px -117px;
+}
+.icon-g:hover{
+	background-position:-299px -117px;
+}
+.icon-h:hover{
+	background-position:-387px -117px;
+}
+
+.icon-i:hover{
+	background-position:-124px -214px;
+}
+.icon-j:hover{
+	background-position:-211px -214px;
+}
+.icon-k:hover{
+	background-position:-299px -214px;
+}
+.icon-l:hover{
+	background-position:-479px -25px;
+}
+.icon-m:hover{
+	background-position:-479px -117px;
+}
+.icon-cg:hover{
+	background-position:-387px -214px;
+}
+
+/* 右二 */
+
+/* 右三 */
+.xltj{
+    height: 318px;
+}
+

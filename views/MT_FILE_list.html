@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../layuiadmin/layui/css/layui.css" media="all">
+  <link rel="stylesheet" href="../layuiadmin/style/admin.css" media="all">
+
+  <link rel="stylesheet" href="../css/MT_File_list.css">
+
+</head>
+
+<body>
+  <div class="layui-fluid">
+    <div class="layui-row layui-col-space10">
+      <!-- 左侧 -->
+      <div class="layui-col-md8 layui-col-sm12   layui-col-xs12 ">
+        <!-- 头部数据 -->
+        <div class=" top_data  ">
+
+          <div class=" topbox  ">
+            <div class="data_box aa">
+
+              <div class="data_xm ">
+                <div class="xma">项目总数</div>
+                <span class="xma_span" id="allnum">0</span>
+              </div>
+
+              <div class="data_xm_bottom">
+                <div class="small_data">
+                  <span  >待提交</span>
+                  <span  id="anum">0</span>
+                </div>
+                <div class="small_data">
+                  <span>待审核</span>
+                  <span id="bnum"> 0</span>
+                </div>
+                <div class="small_data">
+                  <span>已审核</span>
+                  <span id="cnum">0</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="topbox">
+            <div class="data_box  bb">
+              <div class="data_xm">
+                <div class="xma">库房总数</div>
+                <span class="xma_span" >0</span>
+              </div>
+
+              <div class="data_xm_bottom">
+                <div class="small_data">
+                  <span>在库</span>
+                  <span class="EQa">0</span>
+                </div>
+                <div class="small_data">
+                  <span>待出库</span>
+                  <span  class="EQb">0</span>
+                </div>
+                <div class="small_data">
+                  <span>待入库</span>
+                  <span  class="EQc">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class=" topbox">
+            <div class="data_box cc">
+              <div class="data_xm">
+                <div class="xma">可用资金</div>
+                <span class="xma_span">1680</span>
+              </div>
+
+              <div class="data_xm_bottom">
+                <div class="small_data">
+                  <span>到账</span>
+                  <span>23</span>
+                </div>
+                <div class="small_data">
+                  <span>预算</span>
+                  <span>23</span>
+                </div>
+                <div class="small_data">
+                  <span>报销</span>
+                  <span>123</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class=" topbox ">
+            <div class="data_box dd">
+              <div class="data_xm">
+                <div class="xma">员工</div>
+                <span class="xma_span" >0</span>
+              </div>
+              <div class="data_xm_bottom">
+                <div class="small_data">
+                  <span>在职</span>
+                  <span class="rla">0</span>
+                </div>
+                <div class="small_data">
+                  <span>编制内</span>
+                  <span class="rlb">0</span>
+                </div>
+                <div class="small_data">
+                  <span>编制外</span>
+                  <span class="rlc">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 第二部分数据中心和项目统计 -->
+        <div class="layui-row  layui-col-space5">
+          <!-- 2.1数据中心 -->
+          <div class="layui-col-md6  layui-col-sm12   layui-col-xs12  ">
+            <div class="second_boxa">
+              <div class="t_title">
+                <div class="box_l21_title">
+                  <div class="box_l21_t">
+                    <div class="tpl"> <i class="icon xmtj"></i> <span class="span1">流程中心</span> </div>
+                  </div>
+                  <div class="box_l21_t box_l21_t2">更多&gt;&gt;</div>
+
+                </div>
+              </div>
+              <div class="t_content ">
+                <div class="layui-tab" style="margin: 0px;">
+                  <ul class="layui-tab-title">
+                    <li class="layui-this">待我审批</li>
+                    <li>我的申请</li>
+                    <li>抄送事宜</li>
+
+                  </ul>
+                  <div class="layui-tab-content" style="height: 256px;">
+                    <div class="layui-tab-item layui-show" style="height: 222px;">
+                      <ul class="box_l21_body">
+
+                        <li class="box_2li " onclick="drumptoNoticedetail('17')">
+                          <div class="li_content1"> 关于陕西省考古研究院《考古年报》印刷费采购项目协议供货询价公告 </div>
+                          <div class="li_content2">2018/1/9 14:23:11 </div>
+                        </li>
+                        <li class="box_2li " onclick="drumptoNoticedetail('16')">
+                          <div class="li_content1"> 关于陕西省考古研究院澄县刘家洼考古工地标准化建设采购项目询价公告 </div>
+                          <div class="li_content2">2018/1/9 14:21:37 </div>
+                        </li>
+                        <li class="box_2li " onclick="drumptoNoticedetail('15')">
+                          <div class="li_content1"> 陕西省考古研究院西办公楼地下室侧墙面防水工程设计及预算询价公告 </div>
+                          <div class="li_content2">2018/1/9 14:20:59 </div>
+                        </li>
+                        <li class="box_2li " onclick="drumptoNoticedetail('14')">
+                          <div class="li_content1"> 关于陕西省考古研究院年报印刷项目竞争性磋商采购成交公告 </div>
+                          <div class="li_content2">2018/1/9 14:19:36 </div>
+                        </li>
+                        <li class="box_2li " onclick="drumptoNoticedetail('13')">
+                          <div class="li_content1"> 陕西省考古研究院固定资产内审服务询价公告 </div>
+                          <div class="li_content2">2018/1/9 14:16:27 </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="layui-tab-item" style="height: 222px;">
+                      <ul class="box_l21_body">
+
+                        <li class="box_2li " onclick="drumptoNoticedetail('17')">
+                          <div class="li_content1"> 关于陕西省考古研究院《考古年报》印刷费采购项目协议供货询价公告 </div>
+                          <div class="li_content2">2018/1/9 14:23:11 </div>
+                        </li>
+                        <li class="box_2li " onclick="drumptoNoticedetail('16')">
+                          <div class="li_content1"> 关于陕西省考古研究院澄县刘家洼考古工地标准化建设采购项目询价公告 </div>
+                          <div class="li_content2">2018/1/9 14:21:37 </div>
+                        </li>
+                        <li class="box_2li " onclick="drumptoNoticedetail('15')">
+                          <div class="li_content1"> 陕西省考古研究院西办公楼地下室侧墙面防水工程设计及预算询价公告 </div>
+                          <div class="li_content2">2018/1/9 14:20:59 </div>
+                        </li>
+                        <li class="box_2li " onclick="drumptoNoticedetail('14')">
+                          <div class="li_content1"> 关于陕西省考古研究院年报印刷项目竞争性磋商采购成交公告 </div>
+                          <div class="li_content2">2018/1/9 14:19:36 </div>
+                        </li>
+                        <li class="box_2li " onclick="drumptoNoticedetail('13')">
+                          <div class="li_content1"> 陕西省考古研究院固定资产内审服务询价公告 </div>
+                          <div class="li_content2">2018/1/9 14:16:27 </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="layui-tab-item" style="height: 222px;">
+                      <ul class="box_l21_body">
+
+                        <li class="box_2li " onclick="drumptoNoticedetail('17')">
+                          <div class="li_content1"> 关于陕西省考古研究院《考古年报》印刷费采购项目协议供货询价公告 </div>
+                          <div class="li_content2">2018/1/9 14:23:11 </div>
+                        </li>
+                        <li class="box_2li " onclick="drumptoNoticedetail('16')">
+                          <div class="li_content1"> 关于陕西省考古研究院澄县刘家洼考古工地标准化建设采购项目询价公告 </div>
+                          <div class="li_content2">2018/1/9 14:21:37 </div>
+                        </li>
+                        <li class="box_2li " onclick="drumptoNoticedetail('15')">
+                          <div class="li_content1"> 陕西省考古研究院西办公楼地下室侧墙面防水工程设计及预算询价公告 </div>
+                          <div class="li_content2">2018/1/9 14:20:59 </div>
+                        </li>
+                        <li class="box_2li " onclick="drumptoNoticedetail('14')">
+                          <div class="li_content1"> 关于陕西省考古研究院年报印刷项目竞争性磋商采购成交公告 </div>
+                          <div class="li_content2">2018/1/9 14:19:36 </div>
+                        </li>
+                        <li class="box_2li " onclick="drumptoNoticedetail('13')">
+                          <div class="li_content1"> 陕西省考古研究院固定资产内审服务询价公告 </div>
+                          <div class="li_content2">2018/1/9 14:16:27 </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- 2.2项目统计 -->
+          <div class="layui-col-md6  layui-col-sm12   layui-col-xs12 ">
+
+            <div class="second_boxa">
+              <div class="t_title">
+                <div class="box_l21_title">
+                  <div class="box_l21_t">
+                    <div class="tpl"> <i class="icon xmtj"></i> <span class="span1">项目数据统计</span> </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eachs" id="xmtj" style="height: 296px;">
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- 第三部项目统计资金 -->
+        <div class="layui-row  layui-col-space5">
+          <!-- 3.1.1数据中心 -->
+          <div class="layui-col-md6  layui-col-sm12   layui-col-xs12  ">
+            <div class="third_boxa">
+                <div class="t_title">
+                    <div class="box_l21_title">
+                      <div class="box_l21_t">
+                        <div class="tpl"> <i class="icon xmtj"></i> <span class="span1">项目可用资金</span> </div>
+                      </div>
+                      <div class="box_l21_t box_l21_t2">更多&gt;&gt;</div>
+    
+                    </div>
+                  </div>
+                  <div class="xmzj" id="xmzj"  >
+
+                  </div>
+
+                 </div>
+          </div>
+          <!-- 3.1.2项目统计 -->
+          <div class="layui-col-md6  layui-col-sm12   layui-col-xs12 ">
+
+            <div class="third_boxa"> 
+                <div class="third_boxa">
+                    <div class="t_title">
+                        <div class="box_l21_title">
+                          <div class="box_l21_t">
+                            <div class="tpl"> <i class="icon xmtj"></i> <span class="span1">项目账单</span> </div>
+                          </div>
+                          <div class="box_l21_t box_l21_t2">更多&gt;&gt;</div>
+        
+                        </div>
+                      </div>
+
+                      <div class="xmzj" id="xmzd"  >
+    
+                      </div>
+    
+                     </div>
+            </div>
+
+          </div>
+          <!-- 第四部分 -->
+          <!-- 4员工数据统计 -->
+          <div class="layui-col-md12  layui-col-sm12   layui-col-xs12 ">
+            <div class="right_boxa">   <div class="t_title">
+                <div class="box_l21_title">
+                  <div class="box_l21_t">
+                    <div class="tpl"> <i class="icon xmtj"></i> <span class="span1">员工数据统计</span> </div>
+                  </div>
+                  <div class="box_l21_t box_l21_t2">更多&gt;&gt;</div>
+
+                </div>
+              </div>
+              <div class="xmzj" id="ygtj"  >
+
+              </div></div>
+          </div>
+          <!-- 第五部分 -->
+          <!-- 5已修复档案 -->
+          <div class="layui-col-md12  layui-col-sm12   layui-col-xs12 ">
+            <div class="right_boxa">  
+               <div class="t_title">
+                <div class="box_l21_title">
+                  <div class="box_l21_t">
+                    <div class="tpl"> <i class="icon xmtj"></i> <span class="span1">已修复文物统计</span> </div>
+                  </div>
+                  <div class="box_l21_t box_l21_t2">更多&gt;&gt;</div>
+
+                </div>
+              </div>
+              <div class="xmzj" id="xfwu"  >
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 右侧 -->
+      <div class="layui-col-md4 layui-col-sm12 layui-col-xs12 layui-col-space5">
+        <!-- 右一 -->
+        <div class="layui-col-md12  layui-col-sm12   layui-col-xs12  layui-col-space5">
+          <div class="right_boxa">
+            <div class="t_title">
+              <div class="box_l21_title">
+                <div class="box_l21_t">
+                  <div class="tpl"> <i class="icon p1"></i> <span class="span1">通知公告</span> </div>
+                </div>
+                <div class="box_l21_t box_l21_t2"
+                  onclick="adds({title:'通知公告',icon:'',id:812,url:'/yw_individuals/Page/Datalist.html?tn=8030'})">
+                  更多&gt;&gt;</div>
+              </div>
+            </div>
+
+            <div class="right_tzdata">
+              <ul class="box_l21_body">
+                <li class="box_2li " onclick="drumptoNoticedetail('17')">
+                  <div class="li_content1"> 关于陕西省考古研究院《考古年报》印刷费采购项目协议供货询价公告 </div>
+                  <div class="li_content2">2018/1/9 14:23:11 </div>
+                </li>
+                <li class="box_2li " onclick="drumptoNoticedetail('16')">
+                  <div class="li_content1"> 关于陕西省考古研究院澄县刘家洼考古工地标准化建设采购项目询价公告 </div>
+                  <div class="li_content2">2018/1/9 14:21:37 </div>
+                </li>
+                <li class="box_2li " onclick="drumptoNoticedetail('15')">
+                  <div class="li_content1"> 陕西省考古研究院西办公楼地下室侧墙面防水工程设计及预算询价公告 </div>
+                  <div class="li_content2">2018/1/9 14:20:59 </div>
+                </li>
+                <li class="box_2li " onclick="drumptoNoticedetail('14')">
+                  <div class="li_content1"> 关于陕西省考古研究院年报印刷项目竞争性磋商采购成交公告 </div>
+                  <div class="li_content2">2018/1/9 14:19:36 </div>
+                </li>
+                <li class="box_2li " onclick="drumptoNoticedetail('13')">
+                  <div class="li_content1"> 陕西省考古研究院固定资产内审服务询价公告 </div>
+                  <div class="li_content2">2018/1/9 14:16:27 </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 右二 -->
+        <div class="layui-col-md12  layui-col-sm12   layui-col-xs12 ">
+          <div class="right_boxt"> 
+            	<div class="t_title">
+                  <div class="box_l21_title">
+                    <div class="box_l21_t">
+                      <div class="tpl"> <i class="icon kjicon"></i> <span class="span1">快捷操作</span> </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="t_content">
+                    <ul class="boxul">
+      
+                      <li>
+                        <div onclick="submitShenQing(8000,this)" type="no">
+                          <div class="box-icon icon-b"> </div>
+                        </div>
+                        <p class="box-title"> 公文群发</p>
+                      </li>
+                      <li>
+                        <div class="box-icon icon-c" onclick="submitShenQing(8003,this)">
+                          <div class="box-icon icon-c"> </div>
+                        </div>
+                        <p class="box-title"> 请假申请 </p>
+                      </li>
+                      <li>
+                        <div onclick="submitShenQing(8006,this)">
+                          <div class="box-icon icon-d"> </div>
+                        </div>
+                        <p class="box-title"> 出差申请 </p>
+                      </li>
+                      <li>
+                        <div onclick="submitShenQing(8028,this)">
+                          <div class="box-icon icon-cg"> </div>
+                        </div>
+                        <p class="box-title"> 采购</p>
+                      </li>
+                      <li>
+                        <div onclick="submitShenQing(8007,this)">
+                          <div class="box-icon icon-f"> </div>
+                        </div>
+                        <p class="box-title"> 参观接待 </p>
+                      </li>
+                      <li>
+                        <div onclick="submitShenQing(8008,this)">
+                          <div class="box-icon icon-g"> </div>
+                        </div>
+                        <p class="box-title"> 报文申请 </p>
+                      </li>
+                      <li>
+                        <div onclick="submitShenQing(8009,this)">
+                          <div class="box-icon icon-h"> </div>
+                        </div>
+                        <p class="box-title"> 领书申请 </p>
+                      </li>
+                      <li>
+                        <div onclick="submitShenQing(8010,this)">
+                          <div class="box-icon icon-i"> </div>
+                        </div>
+                        <p class="box-title"> 发新闻申请 </p>
+                      </li>
+                      <li>
+                        <div onclick="submitShenQing(8034,this)">
+                          <div class="box-icon icon-j"> </div>
+                        </div>
+                        <p class="box-title"> 通用流程 </p>
+                      </li>
+                      <li>
+                        <div onclick="druptowp()">
+                          <div class="box-icon icon-k"> </div>
+                        </div>
+                        <p class="box-title"> 我的网盘 </p>
+                      </li>
+                      <li>
+                        <div onclick="drupcnzhinet()">
+                          <div class="box-icon icon-l"> </div>
+                        </div>
+                        <p class="box-title"> 中国知网 </p>
+                      </li>
+                      <li>
+                        <div onclick="drupbooksearch()">
+                          <div class="box-icon icon-m"> </div>
+                        </div>
+                        <p class="box-title"> 图书搜索 </p>
+                      </li>
+                      <div class="layui-clear"> </div>
+                    </ul>
+                  </div>
+
+
+          </div>
+        </div>
+        <!-- 右三 -->
+
+        <div class="layui-col-md12  layui-col-sm12   layui-col-xs12 ">
+          <div class="right_boxb"> 
+              <div class="t_title">
+                  <div class="box_l21_title">
+                    <div class="box_l21_t">
+                      <div class="tpl"> <i class="icon xmtj"></i> <span class="span1">学历统计</span> </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="xltj" id="xltj"  >
+  
+                </div>
+          </div>
+        </div>
+
+        <!-- 右四 -->
+        <div class="layui-col-md12  layui-col-sm12   layui-col-xs12 ">
+          <div class="right_boxb"> 
+              <div class="t_title">
+                  <div class="box_l21_title">
+                    <div class="box_l21_t">
+                      <div class="tpl"> <i class="icon xmtj"></i> <span class="span1">文物等级</span> </div>
+                    </div>
+                    
+  
+                  </div>
+                </div>
+                <div class="xmzj" id="wwdj"  >
+  
+                </div>
+          </div>
+        </div>
+      </div>
+      <!-- 下部 -->
+      <div class="layui-col-md12 layui-col-sm12  layui-col-xs12  layui-col-space5 ">
+        <!-- 下左 -->
+        <div class="layui-col-md8  layui-col-sm12   layui-col-xs12 ">
+          <div class="right_boxa"> 项目统计</div>
+        </div>
+        <!-- 下右 -->
+        <div class="layui-col-md4  layui-col-sm12   layui-col-xs12   ">
+          <div class="right_boxa"> 项目统计</div>
+        </div>
+
+      </div>
+      <!-- 下二 -->
+      <div class="layui-col-md12 layui-col-sm12  layui-col-xs12  layui-col-space5 ">
+        <!-- 下左 -->
+        <div class="layui-col-md8  layui-col-sm12   layui-col-xs12 ">
+          <div class="right_boxa"> 项目统计</div>
+        </div>
+        <!-- 下右 -->
+        <div class="layui-col-md4  layui-col-sm12   layui-col-xs12   ">
+          <div class="right_boxa"> 项目统计</div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+  <script type="text/javascript" src="../layuiadmin/layui/layui.js"></script>
+  <script src="../SysJS/MT_common.js"></script>
+  <script src="../js/jquery-1.8.3.min.js"></script>
+  <script src="../js/echarts.js"></script>
+  <script src="../SysJS/SY_wwbh_common.js"></script>
+  <script type="text/javascript" src="../js/MT_FILE_list.js"></script>
+</body>
+
+</html>
